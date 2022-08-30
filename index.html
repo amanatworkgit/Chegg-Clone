@@ -301,13 +301,15 @@
             </p>
         </div>
     </main>
-    <footer class="pagefoot">
-        <div class="footcontent">
+    <footer class="pagefoot" id="pgft">
+        <div class="footcontent" id="ftc">
             <div class="sections">
                 <div class="sec-1">
                     <h2 class="sctitle">COMPANY</h2>
-                    <img src="img/updown.png" alt="">
-                    <ul class="secul1">
+                    <button onclick="openFtUl1()">
+                        <img src="img/updown.png" alt="">
+                    </button>
+                    <ul class="secul1" id="seculft1">
                         <li class="secli">About Chegg</li>
                         <li class="secli">Chegg For Good</li>
                         <li class="secli">College Marketing</li>
@@ -323,8 +325,10 @@
                 </div>
                 <div class="sec-2">
                     <h2 class="sctitle">LEGAL & POLICIES</h2>
-                    <img src="img/updown.png" alt="">
-                    <ul class="secul2">
+                    <button onclick="openFtUl2()">
+                        <img src="img/updown.png" alt="">
+                    </button>
+                    <ul class="secul2" id="seculft2">
                         <li class="secli">Advertising Choices</li>
                         <li class="secli">Cookie Notice</li>
                         <li class="secli">General Policies</li>
@@ -341,8 +345,10 @@
                 </div>
                 <div class="sec-3">
                     <h2 class="sctitle">CHEGG PRODUCTS AND SERVICES</h2>
-                    <img src="img/updown.png" alt="">
-                    <ul class="secul3">
+                    <button onclick="openFtUl3()">
+                        <img src="img/updown.png" alt="">
+                    </button>
+                    <ul class="secul3" id="seculft3">
                         <li class="secli">Cheap Textbooks</li>
                         <li class="secli">Chegg Coupon</li>
                         <li class="secli">Chegg Play</li>
@@ -353,7 +359,7 @@
                         <li class="secli">Learn</li>
                         <li class="secli">Uversity</li>
                     </ul>
-                    <ul class="secul-3b">
+                    <ul class="secul-3b" id="seculft3b">
                         <li class="secli">Chegg Math Solver</li>
                         <li class="secli">Mobile Apps</li>
                         <li class="secli">Solutions Manual</li>
@@ -369,8 +375,10 @@
                 </div>
                 <div class="sec-4">
                     <h2 class="sctitle">CHEGG NETWORK</h2>
-                    <img src="img/updown.png" alt="">
-                    <ul class="secul4">
+                    <button onclick="openFtUl4()">
+                        <img src="img/updown.png" alt="">
+                    </button>
+                    <ul class="secul4" id="seculft4">
                         <li class="secli">Easybib</li>
                         <li class="secli">Internships.com</li>
                         <li class="secli">Thinkful</li>
@@ -382,8 +390,10 @@
                 </div>
                 <div class="sec-5">
                     <h2 class="sctitle">CUSTOMER SERVICE</h2>
-                    <img src="img/updown.png" alt="">
-                    <ul class="secul5">
+                    <button onclick="openFtUl5()">
+                        <img src="img/updown.png" alt="">
+                    </button>
+                    <ul class="secul5" id="seculft5">
                         <li class="secli">Customer Service</li>
                         <li class="secli">Give Us Feedback</li>
                         <li class="secli">Manage Subscription</li>
@@ -399,8 +409,8 @@
             </div>
         </div>
         <div class="endspace">
-            <img class="ftl" src="img/footer-left.webp" alt="">
-            <img class="ftr" src="img/footer-right.webp" alt="">
+            <img class="ftl" id="Ftlid" src="img/footer-left.webp" alt="">
+            <img class="ftr" id="Ftrid" src="img/footer-right.webp" alt="">
         </div>
     </footer>
     <script>
@@ -419,6 +429,94 @@
             document.getElementById("close-nav").style.display = "none";
             if (document.getElementById("sideNav").style.visibility = "hidden") {
                 document.getElementById("scr-block").style.display = "none";
+            }
+        }
+
+        function openFtUl1() {
+            let x = document.getElementById("seculft1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            let t = document.getElementById("ftc");
+            if (t.style.margin === "0px") {
+                t.style.marginBottom = "220px";
+            } else {
+                t.style.margin = "0px";
+            }
+        }
+
+        function openFtUl2() {
+            let x = document.getElementById("seculft2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            let t = document.getElementById("ftc");
+            if (t.style.margin === "0px") {
+                t.style.marginBottom = "220px";
+            } else {
+                t.style.margin = "0px";
+            }
+
+        }
+
+        function openFtUl3() {
+            let x = document.getElementById("seculft3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            let y = document.getElementById("seculft3b");
+            if (y.style.display === "none") {
+                y.style.display = "block";
+                y.style.float = "left";
+                y.style.right = "unset";
+                y.style.left = "147px";
+            } else {
+                y.style.display = "none";
+            }
+            let t = document.getElementById("ftc");
+            if (t.style.margin === "0px") {
+                t.style.marginBottom = "220px";
+            } else {
+                t.style.margin = "0px";
+            }
+
+        }
+
+
+        function openFtUl4() {
+            let x = document.getElementById("seculft4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            let t = document.getElementById("ftc");
+            if (t.style.margin === "0px") {
+                t.style.marginBottom = "220px";
+            } else {
+                t.style.margin = "0px";
+            }
+
+        }
+
+        function openFtUl5() {
+            let x = document.getElementById("seculft5");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            let t = document.getElementById("ftc");
+            if (t.style.margin === "0px") {
+                t.style.marginBottom = "220px";
+            } else {
+                t.style.margin = "0px";
             }
         }
     </script>

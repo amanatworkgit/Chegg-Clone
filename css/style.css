@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
 }
-
 footer {
     background-color: white;
     color: black;
@@ -43,13 +42,24 @@ footer {
     justify-content: space-between;
 }
 
-.sections img {
+.sections button {
     float: right;
     bottom: 23px;
     position: relative;
     width: 20px;
     display: none;
     right: -21px;
+    border: none;
+    background-color: white;
+}
+
+.sections img {
+    position: relative;
+    width: 20px;
+    right: 0px;
+    top: 0px;
+    float: none;
+    bottom: 0;
 }
 
 .secli {
@@ -932,6 +942,7 @@ nav {
 .value span a:hover {
     text-decoration: solid underline #00799e 1px;
 }
+
 .package2 {
     display: flex;
     justify-content: center;
