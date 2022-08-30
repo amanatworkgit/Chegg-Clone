@@ -546,8 +546,9 @@ nav {
 }
 
 .search button {
-    height: 41px;
-    top: -45px;
+    height: 40px;
+    top: -44px;
+    border: 0.1px solid rgb(235, 113, 0);
     position: relative;
     left: 444px;
     width: 94px;
@@ -611,6 +612,7 @@ nav {
 .pkgbt button {
     width: 113px;
     background-color: rgb(235, 113, 0);
+    border: 0.1px solid rgb(235, 113, 0);
     color: whitesmoke;
     height: 44px;
     border-radius: 22px;
@@ -652,7 +654,7 @@ nav {
     height: 45px;
     background-color: rgb(235, 113, 0);
     border-radius: 23px;
-    border-color: rgb(235, 113, 0);
+    border: 0.1px solid rgb(235, 113, 0);
     color: white;
     font-size: 21px;
     font-family: 'Inter', sans-serif;
@@ -750,7 +752,7 @@ nav {
     border-radius: 22px;
     font-size: 21px;
     background-color: rgb(235, 113, 0);
-    border-color: rgb(235, 113, 0);
+    border: 0.1px solid rgb(235, 113, 0);
     color: white;
     font-weight: bold;
     font-family: 'Mulish', sans-serif;
@@ -814,7 +816,7 @@ nav {
     border-radius: 22px;
     font-size: 21px;
     background-color: rgb(235, 113, 0);
-    border-color: rgb(235, 113, 0);
+    border: 0.1px solid rgb(235, 113, 0);
     color: white;
     font-weight: bold;
     font-family: 'Mulish', sans-serif;
@@ -930,7 +932,6 @@ nav {
 .value span a:hover {
     text-decoration: solid underline #00799e 1px;
 }
-
 .package2 {
     display: flex;
     justify-content: center;
@@ -956,6 +957,7 @@ nav {
 .pkg2 button {
     width: 113px;
     background-color: rgb(235, 113, 0);
+    border: 0.1px solid rgb(235, 113, 0);
     color: whitesmoke;
     height: 44px;
     border-radius: 22px;
